@@ -46,11 +46,11 @@ void setup() {
 
   //encoder interrupt
   attachInterrupt(digitalPinToInterrupt(ENCA1), rightEncoder, CHANGE); //these interrupts had to be on the 
-  //previously mentioned specific pins, of which only two remained. My initial implementation used 4, per the standard for 2 signal encoders, to determine
+  //previously mentioned specific pins, of which only two remained. My initial implementation used 4 pins (per the standard for 2 signal encoders) to determine
   //direction, but I figured out how to use only 2 pins by checking if there was any change to the encoder on just one pin and determining the order later
-  //in the rightEncoder() and leftEncoder() functions, which then compare the encoder with the change to the second encoder trigger on that wheel
+  //in the rightEncoder() and leftEncoder() functions, which then compared the encoder with the change to the second encoder trigger on that wheel
   //to determine if the second encoder has been triggered yet, letting me know which direction the wheel is turning. In one case, the second trigger will
-  //have been triggered, while in the other, it wouldn't. This method is the core of tracking wheel movement.
+  //have been triggered, while in the other, it wouldn't. This method is the core of tracking wheel movement direction.
   attachInterrupt(digitalPinToInterrupt(ENCA2), leftEncoder, CHANGE);
 
   // Initialize ultrasonic sensor pins
