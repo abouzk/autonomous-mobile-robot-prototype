@@ -60,7 +60,7 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  // main
   bool buttonState = digitalRead(BUTTON);  // Read the button state
 
   // if (buttonState == LOW) {              // LOW when pressed (inverted logic)
