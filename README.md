@@ -1,7 +1,7 @@
 # Autonomous Mobile Service Robot (Systems Engineering Prototype)
 **Role:** Systems Integrator & Firmware Developer | **Platform:** Arduino Mega (C++)
 
-![Final System](media/final_system_deployment.jpg)
+![Final System](media/final_system_deployment.jpg)  
 *(Phase 3: Final deployed prototype with custom enclosure for campus environments)*
 
 ## 1. Project Overview
@@ -14,7 +14,7 @@ The robot utilizes a **Differential Drive** kinematics model controlled by an **
 * **Perception:** Ultrasonic Sensor (HC-SR04) for obstacle detection
 * **Power:** 12V DC Independent Power Supply (8xAA Array) for mobile autonomy
 
-![Hardware Integration](media/hardware_integration_breadboard.jpg)
+![Hardware Integration](media/hardware_integration_breadboard.jpg)  
 *(Phase 1: Electrical subsystem integration and signal validation)*
 
 ## 3. Technical Implementation
